@@ -1,6 +1,9 @@
 const histor = document.querySelector('.history');
 const vision = document.querySelector('.vision');
 const goals = document.querySelector('.goals');
+const historyLink = document.querySelector('.history1');
+const visionLink = document.querySelector('.vision1');
+const goalsLink = document.querySelector('.goals1');
 const historyText = document.querySelector('.history-stat');
 const visionText = document.querySelector('.vision-stat');
 const goalsText = document.querySelector('.goals-stat');
@@ -13,6 +16,7 @@ histor.addEventListener('click', function(){
         visionText.style.display ='none'
         goalsText.style.display ='none'
         historyText.style.display ='block'
+        historyLink.style.backgroundColor = 'white'
     }else{}
 });
 
@@ -23,6 +27,7 @@ vision.addEventListener('click', function(){
         historyText.style.display ='none';
         goalsText.style.display ='none';
         visionText.style.display ='block';
+        visionLink.style.backgroundColor = 'white'
     }else{}
 });
 
