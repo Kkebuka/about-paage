@@ -31,10 +31,7 @@ body {
 }
 h2{
     text-align: center;
-    margin: 0px;
-    
-    
-    
+    margin: 0px; 
 }
 .text-con{
     width: 100%;
@@ -71,11 +68,15 @@ a{
     justify-content: center;
     align-items: center;
 }
-a:hover{
+a:hover, 
+a:focus{
     background-color: rgb(217, 235, 250);
 }
 .history-stat {
     display: block;
+}
+.history1 {
+    background-color: white;
 }
 a:visited {
     /* background-color: white; */
@@ -83,4 +84,12 @@ a:visited {
 .statement-con{
     height: 300px;
     padding: 0px 15px;
+}
+
+.new-prop {
+    background-color: white;
+}
+
+.newstat-prop {
+    display: none;
 }
