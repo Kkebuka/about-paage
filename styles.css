@@ -39,6 +39,7 @@ h2{
 .text-con{
     width: 100%;
     border-radius: 5px;
+    background-color: white;
 }
 .text-div{ 
     width: 100%;
@@ -78,4 +79,8 @@ a:hover{
 }
 a:visited {
     /* background-color: white; */
+}
+.statement-con{
+    height: 300px;
+    padding: 0px 15px;
 }
