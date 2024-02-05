@@ -14,14 +14,14 @@ const goalsText = document.querySelector('.goals-stat');
 
 
 
-vision.addEventListener('click', function(){
+vision.addEventListener('click', function(e){
    historyLink.style.backgroundColor = 'rgb(184, 209, 231)';
    goalsLink.style.backgroundColor = 'rgb(184, 209, 231)';
    historyText.classList.add('newstat-prop');
    goalsText.classList.add('newstat-prop');
    visionLink.style.backgroundColor = 'white';
    visionText.classList.remove('newstat-prop')
-
+    e.preventDefault()
 });
 visionLink.addEventListener('mouseover', function(){
     if(visionText.classList.contains('newstat-prop')){
@@ -35,13 +35,14 @@ visionLink.addEventListener('mouseout', function(){
 
 
 
-goals.addEventListener('click', function(){
+goals.addEventListener('click', function(e){
     historyLink.style.backgroundColor = 'rgb(184, 209, 231)';
     visionLink.style.backgroundColor = 'rgb(184, 209, 231)';
     historyText.classList.add('newstat-prop');
     visionText.classList.add('newstat-prop');
     goalsLink.style.backgroundColor = 'white';
     goalsText.classList.remove('newstat-prop');
+    e.preventDefault()
 });
 goalsLink.addEventListener('mouseover', function(){
     if(goalsText.classList.contains('newstat-prop')){
@@ -54,13 +55,15 @@ goalsLink.addEventListener('mouseout', function(){
 });
 
 
-histor.addEventListener('click', function(){
+histor.addEventListener('click', function(e){
     goalsLink.style.backgroundColor = 'rgb(184, 209, 231)';
     visionLink.style.backgroundColor = 'rgb(184, 209, 231)';
     goalsText.classList.add('newstat-prop');
     visionText.classList.add('newstat-prop');
     historyLink.style.backgroundColor = 'white';
     historyText.classList.remove('newstat-prop');
+    e.preventDefault()
+
 });
 historyLink.addEventListener('mouseover', function(){
     if(historyText.classList.contains('newstat-prop')){
