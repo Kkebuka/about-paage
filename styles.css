@@ -68,10 +68,6 @@ a{
     justify-content: center;
     align-items: center;
 }
-a:hover, 
-a:focus{
-    background-color: rgb(217, 235, 250);
-}
 .history-stat {
     display: block;
 }

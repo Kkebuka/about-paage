@@ -24,8 +24,16 @@ vision.addEventListener('click', function(){
 
 });
 visionLink.addEventListener('mouseover', function(){
+    if(visionText.classList.contains('newstat-prop')){
     visionLink.style.backgroundColor = 'rgb(217, 235, 250)';
+    }
 });
+visionLink.addEventListener('mouseout', function(){
+    if(visionText.classList.contains('newstat-prop')){
+    visionLink.style.backgroundColor = 'rgb(184, 209, 231)';}
+});
+
+
 
 goals.addEventListener('click', function(){
     historyLink.style.backgroundColor = 'rgb(184, 209, 231)';
@@ -34,6 +42,15 @@ goals.addEventListener('click', function(){
     visionText.classList.add('newstat-prop');
     goalsLink.style.backgroundColor = 'white';
     goalsText.classList.remove('newstat-prop');
+});
+goalsLink.addEventListener('mouseover', function(){
+    if(goalsText.classList.contains('newstat-prop')){
+    goalsLink.style.backgroundColor = 'rgb(217, 235, 250)';
+    }
+});
+goalsLink.addEventListener('mouseout', function(){
+    if(goalsText.classList.contains('newstat-prop')){
+    goalsLink.style.backgroundColor = 'rgb(184, 209, 231)';}
 });
 
 
@@ -44,4 +61,13 @@ histor.addEventListener('click', function(){
     visionText.classList.add('newstat-prop');
     historyLink.style.backgroundColor = 'white';
     historyText.classList.remove('newstat-prop');
+});
+historyLink.addEventListener('mouseover', function(){
+    if(historyText.classList.contains('newstat-prop')){
+    historyLink.style.backgroundColor = 'rgb(217, 235, 250)';
+    }
+});
+historyLink.addEventListener('mouseout', function(){
+    if(historyText.classList.contains('newstat-prop')){
+    historyLink.style.backgroundColor = 'rgb(184, 209, 231)';}
 });
